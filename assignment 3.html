@@ -1,0 +1,138 @@
+<!--
+	assignment 03 :creating hyperlinks and images in HTML.
+	objective : to create an HTML webpage that includes internal and external hyperlinks and displays images with different alignments.
+	tasks : design a webpage using the following HTML elements.
+	course :VSEC-101-CA: HTML and webpage desinging 
+	college : APIMR, landewadi
+	university : savitribai phule pune university.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- the <head> section contains metadata and the title of the page -->
+	<title> Creating hyerlinks and images in HTML </title>
+</head>
+
+<body bgcolor="#f5fcff" text="#000000"> <!-- sets a light background color and black text -->
+
+	<!-- heading section -->
+	<h1 align="center">creating hyerlinks and images in HTML</h1>
+	<h2 align="center">savitribai phule pune university</h2>
+	<h3 align="center">course: VSEC-101-CA: HTML and webpage desinging</h2>
+	<hr color="blue" size="3">
+	
+	<!-- Question 01 -->
+	
+	<h1>Question 01: basic external hyperlink</h1>
+	
+	<h2>external hyperlinks example</h2>
+	<a href="https://www.google.com" target="_blank"> visit google</a>
+	
+	<h2>student activity</h2>
+	<a href="http://www.unipune.ac.in/"target="_blank">visit sppu link</a>
+	
+	<!-- Question 2 -->
+	
+	<h2>Question 2: internal hayperlink</h2>
+	
+	<a href="#about">go to about section</a>
+	<h2 id="about"> about section </h2>
+	<p>this section contains information about HTML.</p>
+	
+	<h2>student activity</h2>
+	<a href="my gallery">go to about section</a>
+	<h2 id="my gallery">about section</h2>
+	<p>this section contains photos or HTML.</p>
+	
+	<!-- Question 3 -->
+	
+	<h1>Question 3: link between two HTML.pages</h1>
+	<h2>link between two HTML.pages</h2>
+	<a href="page2.html">go to page 2</a>
+	
+	<h2>student activity</h2>
+	<a href="main.html"> go to home page</a>
+	<a href="about.html">go to about page</a>
+	
+	<!-- Question 4 -->
+	<h1>Question 4. image example</h1>
+	
+	<img src="htmllogo.png" alt="html logo" width="200" height="200">
+	
+	<h2>student activity</h2>
+	
+	<img src="footballlogo.png" alt="football logo" width="250px" height="200px">
+	
+	<!-- Question 5 -->
+	
+	<h1>Question 5. image alignment example </h1>
+	<img src="image.png" alt="example image" align="left" width="150" height="150">
+	<br><br><br><p> this text flows around the left-aligned image.</p>
+	
+	<h2>student activity</h2>
+	<img src="left.jpeg" alt="left side image" align="left" width="150" height="150">
+	<br><br><br><p> this is a short descriptive paragraph placed besides the image aligned to the left.</p>
+	
+	<h3>student activity</h3>
+	<img src="right.jpeg" alt="right side image" align="right" width="150" height="150">
+	<br><br><br><p> this paragraph appears besides the image aligned to the right.</p>
+	
+	<!-- Question 6 -->
+	
+	<h1>Question 6. centered image </h1>
+	<p align="center">
+		<img src="css.png"alt="css logo" width="200" height="200"><br>
+		<b>figure 1: css logo</b>
+		
+	<h2> student activity</h2>
+	<p align="center">
+	<img src="apimr.jpeg"alt="apimr logo" width="200" height="200"><br>
+		<b>figure 2: apimr logo</b>
+		
+	<!-- Question 7 -->
+	
+	<h1>Question 7. image as link </h1>
+	<a href="html.png" target="black">
+	<img src="html.png" alt="html docs" width="150" height="150">
+	</a>
+	
+	<h2> student activity</h2>
+	<a href="https://www.w3schools.com"target="black">
+	<img src="sports quota.jpeg"alt="sports quota docs" width="150" height="150">
+	
+	<!-- Question 8 -->
+	
+	<h1>Question 8. tooltip example</h1>
+	<a href="https://www.wikipedia.org"title="visit wikipedia">wikipedia</a>
+	
+	<h2> student activity</h2>
+	<a href="https://developer.org/" title="visit MDN web docs"
+	target="black" rel="nooper">
+	MDN web docs</a>
+	
+	<!-- Question 9 -->
+	
+	<h1> Question 9. email and phone links</h1>
+	<a href="mailto:example@gamil.com">send email</a><br>
+	<a href="tel.+919370965462">call me</a>
+	
+	<h2> student activity </h2>
+	<h3> contact apimr office </h3>
+	<a href="mailto:apimrinfo@gamil.com">send email</a><br>
+	<a href="tel:+02133-235105">call me</a>
+	
+	<!-- Question 10 -->
+	
+	<h1> Question 10.image gallary example</h1>
+	<a href="image1.jpeg"><img src="image1.jpeg" width="150" height="150"></a>
+	<a href="image2.jpeg"><img src="image2.jpeg" width="150" height="150"></a>
+	<a href="image3.jpeg"><img src="image3.jpeg" width="150" height="150"></a>
+	
+	<h2> student activity </h2>
+	<a href="gulabjamun.jpeg"><img src="gulabjamun.jpeg" width="150" height="150"></a>
+	<a href="icecream.jpeg"><img src="icecream.jpeg"width="150" height="150"></a>
+	<a href="kajukatli.jpeg"><img src="kajukatli.jpeg" width="150" height="150"></a>
+	<a href="rasmalai.jpeg"><img src="rasmalai.jpeg" width="150" height="150"></a>
+</body>
+</html>
