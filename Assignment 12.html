@@ -1,0 +1,95 @@
+<!--
+Assignment 12: Designing website using basic elements of HTML, CSS and JavaScript.
+Objective: To understand and implement the basic concepts of HTML for structure, CSS
+for styling, and JavaScript for interactivity in web page design.
+Task: Create a mini webpage that displays current date and time using JavaScript and
+updates every second with Start, Pause, and Stop controls.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The <head> section contains metadata and the title of the page -->
+    <title>Current date and time</title>
+</head>
+ 
+
+<body bgcolor="#f5fcff" text="#000000"> <!-- Sets a light background color and black text -->
+ 
+    <!-- Heading section -->
+    <h1 align="center">current date and time</h1>
+    <h2 align="center">Savitribai Phule Pune University</h2>
+    <h3 align="center">Course: VSEC-101-CA: HTML and Webpage Designing</h3>
+    <hr color="blue" size="3">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current Date and Time</title>
+	<!-- CSS Styling -->
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f8ff;
+			text-align: center;
+			margin-top: 100px;
+		}
+		h1 {
+			color: #333366;
+		}
+		#datetime {
+			font-size: 24px;
+			color: #006699;
+			margin: 20px 0;
+			font-weight: bold;
+		}	
+		button {
+			padding: 10px 20px;
+			margin: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
+	<!-- JavaScript Code -->
+	<script>
+		var timer = null;
+		function showDateTime() {
+			var now = new Date();
+			document.getElementById("datetime").innerHTML = now;
+		}
+		function startTime() {
+			if (timer === null) {
+				showDateTime();
+				timer = setInterval(showDateTime, 1000);
+			}
+		}
+		function pauseTime() {
+			clearInterval(timer);
+			timer = null;
+		}
+		function stopTime() {
+			clearInterval(timer);
+			timer = null;
+			document.getElementById("datetime").innerHTML = "";
+		}
+	</script>
+</head>
+<body>
+	<h1>Current Date and Time</h1>
+	<div id="datetime"></div>
+	<button onclick="startTime()">Start</button>
+	<button onclick="pauseTime()">Pause</button>
+	<button onclick="stopTime()">Stop</button>
+</body>
+</html>
+
+<footer>
+        <p align="center">
+            Created by: <b>ASMITA PABALE</b><br>
+            Course Code: VSEC-101-CA<br>
+            College: APIMR, Landewadi<br>
+            2025 Savitribai Phule Pune University</p>
+	</footer>
+	</Body>
+	</html>
