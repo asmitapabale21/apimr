@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The <head> section contains metadata and the title of the page -->
+    <title>Designing a Website Using HTML, CSS, and Advanced JavaScript</title>
+</head>
+ 
+
+<body bgcolor="#f5fcff" text="#000000"> <!-- Sets a light background color and black text -->
+ 
+    <!-- Heading section -->
+    <h1 align="center">Designing a Website Using HTML, CSS, and Advanced JavaScript</h1>
+    <h2 align="center">Savitribai Phule Pune University</h2>
+    <h3 align="center">Course: VSEC-101-CA: HTML and Webpage Designing</h3>
+    <hr color="blue" size="3">
+
+
+Index.html (Home Page)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home - My Website</title>
+	<style>
+		body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background-color: #f0f8ff; }
+		header { background-color: #333366; color: white; padding: 20px; }
+		nav { background-color: #444488; overflow: hidden; }
+		nav a { color: white; text-decoration: none; padding: 14px 20px; display: inline-block; }
+		nav a:hover { background-color: #6666aa; }
+		section { padding: 40px; }
+	30h1 { color: #333366; }
+	</style>
+	<script>
+		function greetUser() {
+			alert("Welcome to My Website!");
+		}
+	</script>
+</head>
+<body onload="greetUser()">
+	<header>
+		<h1>Welcome to My Website</h1>
+	</header>
+	<nav>
+	<a href="index.html">Home</a>
+	<a href="about.html">About Me</a>
+	<a href="gallery.html">Gallery</a>
+	<a href="services.html">Services</a>
+	<a href="contact.html">Contact Me</a>
+	</nav>
+	<section>
+		<h2>Home Page</h2>
+		<p>This is the home page of my interactive multi-page website built using HTML, CSS, and JavaScript.</p>
+	</section>
+</body>
+</html>
+
+
+about.html (About Me Page)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Me</title>
+	<style>
+	body { font-family: Arial, sans-serif; margin: 0; text-align: center; background-color: #f9f9f9; }
+	header { background-color: #333366; color: white; padding: 20px; }
+	nav { background-color: #444488; overflow: hidden; }
+	nav a { color: white; text-decoration: none; padding: 14px 20px; display: inline-block; }
+	nav a:hover { background-color: #6666aa; }
+	section { padding: 40px; }
+	img { width: 200px; border-radius: 50%; margin: 20px 0; }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>About Me</h1>
+	</header>
+	<nav>
+	<a href="index.html">Home</a>
+	<a href="about.html">About Me</a>
+	<a href="gallery.html">Gallery</a>
+	<a href="services.html">Services</a>
+	<a href="contact.html">Contact Me</a>
+	</nav>
+	<section>
+		<h2>My Profile</h2>
+	<img src="https://via.placeholder.com/200" alt="Profile Picture">
+	<p>Hello! I am a web development enthusiast learning HTML, CSS, and JavaScript.</p>
+	<h3>My Skills:</h3>
+	<ul>
+		<li>HTML & CSS</li>
+		<li>JavaScript</li>
+		<li>Responsive Design</li>
+		<li>Basic Front-End Development</li>
+	</ul>
+	<h3>Hobbies:</h3>
+	<ol>
+		<li>Coding</li>
+		<li>Reading</li>
+		<li>Photography</li>
+	</ol>
+	</section>
+</body>
+</html>
+
+
+gallery.html (Gallery Page with Slider)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<style>
+	body { font-family: Arial, sans-serif; margin: 0; text-align: center; background-color: #f0f8ff; }
+	header { background-color: #333366; color: white; padding: 20px; }
+	nav { background-color: #444488; overflow: hidden; }
+	nav a { color: white; text-decoration: none; padding: 14px 20px; display: inline-block; }
+	nav a:hover { background-color: #6666aa; }
+	section { padding: 40px; }
+	#slider { width: 80%; margin: 0 auto; position: relative; }
+	#slider img { width: 100%; display: none; border-radius: 10px; }
+	</style>
+	<script>
+		var slideIndex = 0;
+		function showSlides() {
+			var slides = document.querySelectorAll('#slider img');
+			for (var i = 0; i < slides.length; i++) slides[i].style.display = "none";
+			slideIndex++;
+			if (slideIndex > slides.length) slideIndex = 1;
+			slides[slideIndex-1].style.display = "block";
+			setTimeout(showSlides, 3000);
+		}
+		window.onload = showSlides;
+	</script>
+</head>
+<body>
+	<header>
+	<h1>Gallery</h1>
+	</header>
+	<nav>
+	<a href="index.html">Home</a>
+	<a href="about.html">About Me</a>
+	<a href="gallery.html">Gallery</a>
+	<a href="services.html">Services</a>
+	<a href="contact.html">Contact Me</a>
+	</nav>
+	<section>
+		<h2>Image Slider</h2>
+		<div id="slider">
+			<img src="https://via.placeholder.com/800x400?text=Image+1" alt="Image 1">
+			<img src="https://via.placeholder.com/800x400?text=Image+2" alt="Image 2">
+			<img src="https://via.placeholder.com/800x400?text=Image+3" alt="Image 3">
+		</div>
+	</section>
+</body>
+</html>
+
+
+services.html (Projects Page with Table)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Services</title>
+	<style>
+		body { font-family: Arial, sans-serif; margin: 0; text-align: center; background-color: #f9f9f9; }
+		header { background-color: #333366; color: white; padding: 20px; }
+		nav { background-color: #444488; overflow: hidden; }
+		nav a { color: white; text-decoration: none; padding: 14px 20px; display: inline-block; }
+		nav a:hover { background-color: #6666aa; }
+		section { padding: 40px; }
+		table { width: 80%; margin: 0 auto; border-collapse: collapse; }
+		th, td { border: 1px solid #333366; padding: 10px; }
+		th { background-color: #333366; color: white; }
+		tr:nth-child(even) { background-color: #e6e6ff; }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Services / Projects</h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="services.html">Services</a>
+		<a href="contact.html">Contact Me</a>
+	</nav>
+	<section>
+		<h2>Our Services</h2>
+		<table>
+			<tr>
+				<th>Service Name</th>
+				<th>Description</th>
+				<th>Duration</th>
+			</tr>
+			<tr>
+				<td>Web Design</td>
+				<td>Designing responsive websites</td>
+				<td>1 Month</td>
+			</tr>
+			<tr>
+				<td>JavaScript Training</td>
+				<td>Interactive web application training</td>
+				<td>2 Weeks</td>
+			</tr>
+			<tr>
+				<td>UI/UX Design</td>
+				<td>Creating user-friendly interfaces</td>
+				<td>3 Weeks</td>
+			</tr>
+		</table>
+	</section>
+</body>
+</html>
+
+
+contact.html (Contact Me Page)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Me</title>
+	<style>
+		body { font-family: Arial, sans-serif; margin: 0; text-align: center; background-color: #f0f8ff; }
+		header { background-color: #333366; color: white; padding: 20px; }
+		nav { background-color: #444488; overflow: hidden; }
+		nav a { color: white; text-decoration: none; padding: 14px 20px; display: inline-block; }
+		nav a:hover { background-color: #6666aa; }
+		section { padding: 40px; }
+		input, textarea { width: 300px; padding: 10px; margin: 10px 0; }
+		button { padding: 10px 20px; cursor: pointer; }
+		p { color: green; font-weight: bold; }
+	</style>
+	<script>
+		function validateForm() {
+			var name = document.forms["contactForm"]["name"].value;
+			var email = document.forms["contactForm"]["email"].value;
+			var message = document.forms["contactForm"]["message"].value;
+			if(name == "" || email == "" || message == "") {
+				alert("Please fill all fields.");
+				return false;
+			}
+			var atpos = email.indexOf("@");
+			var dotpos = email.lastIndexOf(".");
+			if(atpos < 1 || dotpos < atpos+2 || dotpos+2 >= email.length) {
+				alert("Please enter a valid email address.");
+				return false;
+			}
+			document.getElementById("success").innerHTML = "Form submitted successfully!";
+			return false; // prevent actual form submission for demo
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Contact Me</h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="services.html">Services</a>
+		<a href="contact.html">Contact Me</a>
+	</nav>
+	<section>
+		<h2>Get in Touch</h2>
+		<form name="contactForm" onsubmit="return validateForm()">
+			<input type="text" name="name" placeholder="Your Name"><br>
+			<input type="email" name="email" placeholder="Your Email"><br>
+			<textarea name="message" placeholder="Your Message" rows="5"></textarea><br>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</form>
+		<p id="success"></p>
+	</section>
+</body>
+</html>
+
+
+<footer>
+        <p align="center">
+            Created by: <b>ASMITA PABALE</b><br>
+            Course Code: VSEC-101-CA<br>
+            College: APIMR, Landewadi<br>
+            2025 Savitribai Phule Pune University</p>
+</footer>
