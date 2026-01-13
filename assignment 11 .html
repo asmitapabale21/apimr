@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The <head> section contains metadata and the title of the page -->
+    <title>Creating Frames in HTML</title>
+</head>
+ 
+
+<body bgcolor="#f5fcff" text="#000000"> <!-- Sets a light background color and black text -->
+ 
+    <!-- Heading section -->
+    <h1 align="center">Creating Frames in HTML</h1>
+    <h2 align="center">Savitribai Phule Pune University</h2>
+    <h3 align="center">Course: VSEC-101-CA: HTML and Webpage Designing</h3>
+    <hr color="blue" size="3">
+
+index.html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Frames Example</title>
+	</head>
+		<frameset cols="30%, 70%">
+			<frame src="menu.html">
+			<frame src="content.html">
+		</frameset>
+</html>
+
+
+menu.html
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Menu</title>
+	</head>
+	<body>
+		<h2>Menu</h2>
+		<ul>
+			<li><a href="content.html" target="_self">Home</a></li>
+			<li><a href="about.html" target="_self">About</a></li>
+		</ul>
+	</body>
+</html>
+
+
+content.html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+	<body>
+		<h1>Welcome</h1>
+		<p>This is the content displayed in the right frame.</p>
+	</body>
+</html>
+
+
+about.html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About</title>
+	</head>
+	<body>
+		<h1>About Page</h1>
+		<p>This page appears inside the frame.</p>
+	</body>
+</html>
+
+<footer>
+        <p align="center">
+            Created by: <b>ASMITA PABALE</b><br>
+            Course Code: VSEC-101-CA<br>
+            College: APIMR, Landewadi<br>
+            &copy; 2025 Savitribai Phule Pune University</p>
+	</footer>
+	</Body>
+	</html>
